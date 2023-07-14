@@ -42,8 +42,5 @@
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.3.4",
     "supertest": "^6.3.3"
-  },
-  "engines": {
-    "node": ">=14.20.1"
   }
 }
