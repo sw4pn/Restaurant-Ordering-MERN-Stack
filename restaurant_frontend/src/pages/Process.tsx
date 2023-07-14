@@ -23,14 +23,8 @@ const Process = () => {
 
   const dish = useSelector(selectADish);
 
-  const {
-    orderError,
-    orderSuccess,
-    orderLoading,
-    order,
-    createdOrder,
-    orderMessage,
-  } = useSelector(selectOrderState);
+  const { orderError, orderSuccess, orderLoading, createdOrder, orderMessage } =
+    useSelector(selectOrderState);
 
   useEffect(() => {
     if (id) {

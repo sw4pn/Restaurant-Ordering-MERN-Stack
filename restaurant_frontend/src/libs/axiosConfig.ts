@@ -1,4 +1,4 @@
-const storage = await localStorage.getItem("accessToken");
+const storage = localStorage.getItem("accessToken");
 
 const token =
   storage ||
