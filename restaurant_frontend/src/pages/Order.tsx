@@ -61,7 +61,7 @@ const Order = () => {
 
       <div className="px-4 md:px-10 ">
         {loading ? (
-          "Loading...."
+          <>Loading.....</>
         ) : (
           <>
             <div className="flex flex-col justify-start gap-2 p-4 text-teal-600 bg-neutral-100">

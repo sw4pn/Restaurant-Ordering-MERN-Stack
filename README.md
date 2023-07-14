@@ -1,14 +1,50 @@
 # Restaurant-Ordering-MERN-Stack
 
-Deliverables:
+- Check the Live version of the website here: `https://gilded-gaufre-eaa898.netlify.app/`
 
-- Source code of the application.
-- Documentation explaining the structure of your application, how to run it, and how to use it.
-- Test cases demonstrating that your application works as expected.
+## Source Code
 
-## Backend with Node.js Express
+- Backend Directory: `restaurant_express` ExpressJS + MongoDB + Mongoose
+- Frontend Directory: `restaurant_frontend` ReactJS + Redux + TailwindCSS
 
-- Database Used: MongoDB --> to store data related to dishes and orders.
-- REST API can be accessed through the following endpoints:
+## Local Installation
 
-## Frontend with React.js
+- clone the repo with `git clone https://github.com/sw4pn/Restaurant-Ordering-MERN-Stack.git`
+
+### Install & Run ExpressJS backend
+
+- open cmd prompt in the project directory.
+- move to expressJS folder : `cd restaurant_express`
+- install npm libraries required : `npm install`
+- run your expressJS server : `npm run start`
+- the server should be started at `http://localhost:4000`
+
+#### API Endpoints
+
+- get all dishes : `GET /api/dishes`
+- create order: `POST /api/orders`
+- get all orders : `GET /api/orders`
+- get single order with id 'ID' : `GET /api/orders/{ID}`
+
+- other routes includes auth routes, CRUD routes for dishes and CRUD routes for orders for more information on routes check the directory: `/restaurant_express/src/routes` in expressJS Server.
+
+### Install & Run Frontend ReactJS Application
+
+- React application is built with Vite for faster development.
+- open cmd prompt in the project directory
+- Move to ReactJS directory `cd restaurant_frontend`
+- install required dependencies : `npm install`
+- run your react application : `npm run dev`
+- open the web application at `http://localhost:3000/`
+
+## Dependencies used
+
+- Redux : state management
+- formik: form handling
+- yup: form validation
+- moment: date handling
+- shadcd-ui: to create custom ui
+- axios: http request handling
+- react-icons: show icons
+- bcrypt & jsonwebtoken: auth & token handling
+- mongoose: MongoDB data handling

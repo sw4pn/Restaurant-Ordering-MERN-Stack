@@ -4,6 +4,7 @@ import { getAllOrders, selectAllOrders } from "../features/order/orderSlice";
 import { Link, useNavigate } from "react-router-dom";
 import moment from "moment";
 import { Button } from "../components/ui/Button";
+import { Skeleton } from "../components/ui/Skeleton";
 
 const OrderList = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -23,7 +24,11 @@ const OrderList = () => {
       <h1 className=" text-center text-xl font-semibold">OrderList</h1>
       <div className="">
         {loading ? (
-          "Loading....."
+          <div className="flex flex-col p-4 my-2 border-2 rounded-md gap-4">
+            <Skeleton className="h-12 w-20" />
+            <Skeleton className="h-12 w-40" />
+            <Skeleton className="h-20 w-full" />
+          </div>
         ) : orders && ordersList.length > 0 ? (
           ordersList.map((order, i) => (
             <div
