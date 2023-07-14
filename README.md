@@ -1,5 +1,6 @@
 # Restaurant-Ordering-MERN-Stack
 
+- Visit Web Version: [Visit Restaurant Ordering System](https://gilded-gaufre-eaa898.netlify.app/)
 - Check the Live version of the website here: `https://gilded-gaufre-eaa898.netlify.app/`
 
 ## Source Code
@@ -43,7 +44,7 @@
 - formik: form handling
 - yup: form validation
 - moment: date handling
-- shadcd-ui: to create custom ui
+- shadcn-ui: to create custom ui
 - axios: http request handling
 - react-icons: show icons
 - bcrypt & jsonwebtoken: auth & token handling
