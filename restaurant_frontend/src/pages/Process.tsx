@@ -94,7 +94,7 @@ const Process = () => {
     },
   });
 
-  const handleQuantityChange = (e) => {
+  const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const quantity = parseInt(e.target.value);
     formik.setFieldValue("quantity", quantity);
   };
